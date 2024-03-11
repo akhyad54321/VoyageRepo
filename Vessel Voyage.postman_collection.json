@@ -1,0 +1,1216 @@
+{
+	"info": {
+		"_postman_id": "1a5ebe01-2e95-49a7-9ab8-f546d33dd504",
+		"name": "Vessel Voyage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31348734",
+		"_collection_link": "https://grey-resonance-774954.postman.co/workspace/VesselVoyage~2cb43d1e-e188-410b-ab0b-ad4a85902a26/collection/31348734-1a5ebe01-2e95-49a7-9ab8-f546d33dd504?action=share&source=collection_link&creator=31348734"
+	},
+	"item": [
+		{
+			"name": "Vessel Profile API",
+			"item": [
+				{
+					"name": "vessel-save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"operation\": \"insert\",\r\n    \"senderId\": \"2deef1b3-ce4f-4683-9e35-d4f15f6a60f5\",\r\n    \"values\": [\r\n        {\r\n            \"modeOfTransport\": 1,\r\n            \"mtMv\": \"MV\",\r\n            \"imoNo\": 7011234,\r\n            \"typeOfVessel\": 10,\r\n            \"vesselNameEnglish\": \"Jupiter Melody\",\r\n            \"vesselNameArabic\": \"جوبيتر ميلودي\",\r\n            \"callSign\": \"7890\",\r\n            \"exVesselNameEnglish\": \"Venus Nature\",\r\n            \"exVesselNameArabic\": \"طبيعة الزهرة\",\r\n            \"exCallSign\": \"6540\",\r\n            \"satelliteId\": \"756890\",\r\n            \"satcomId\": \"123456\",\r\n            \"dateOfKeel\": \"2023-11-01\",\r\n            \"vesselDeliveryDate\": \"2023-11-03\",\r\n            \"vesselBuildingPlace\": 150,\r\n            \"permanentShipRegistry\": true,\r\n            \"shipRegCertificateNo\": \"890765\",\r\n            \"safetyManagementCertificate\": true,\r\n            \"safetyManagementCertificateNo\": \"456378\",\r\n            \"ispsCompliance\": true,\r\n            \"capCertificate\": false,\r\n            \"agency\": 1051,\r\n            \"nameOfOwner\": \"Kashish Rao\",\r\n            \"ownerEmailId\": \"kashish@gmail.com\",\r\n            \"portOfRegistration\": 61,\r\n            \"nationality\": 164,\r\n            \"bulbousBow\": true,\r\n            \"noOfBays\": 2,\r\n            \"noOfHatches\": 4,\r\n            \"hatchesCoverType\": 1054,\r\n            \"orgRid\": \"1J1M1B001\",\r\n            \"branchRid\": \"1J1M1B001JEDDAH001\",\r\n            \"createdBy\": \"2deef1b3-ce4f-4683-9e35-d4f15f6a60f5\",\r\n            \"vesselHeight\": 12,\r\n            \"beams\": 12,\r\n            \"loa\": 12,\r\n            \"lbp\": 11,\r\n            \"maximumDraft\": 11,\r\n            \"parallelBody\": 80,\r\n            \"distanceBowToManifold\": 90,\r\n            \"grt\": 5880,\r\n            \"nrt\": 2000,\r\n            \"dwt\": 3880,\r\n            \"segeratedBallastTanker\": true,\r\n            \"reducedGrt\": 300,\r\n            \"summerDeadWeight\": 9,\r\n            \"teuCapacity\": 3000,\r\n            \"freeBoard\": 12,\r\n            \"classificationSociety\": \"Huston Group\",\r\n            \"nameOfHullInsurance\": \"Juniad and Sons\",\r\n            \"piDetailsAllChkBox\": \"\",\r\n            \"vesselGearDetailsAllChkBox\": \"\",\r\n            \"piDetails\": [\r\n                {\r\n                    \"piDetailsChkBox\": \"\",\r\n                    \"seqnumber\": \"\",\r\n                    \"vesTransId\": 202311240000412,\r\n                    \"imoNo\": 7011234,\r\n                    \"nameOfPiClub\": \"Lloyd Group of Enterprises\",\r\n                    \"localCorrespondent\": \"Rawan\"\r\n                }\r\n            ],\r\n            \"vesselGearDetails\": [\r\n                {\r\n                    \"seqnumber\": \"\",\r\n                    \"vesTransId\": 202311240000412,\r\n                    \"imoNo\": 7011234,\r\n                    \"vesselGearDetailsChkBox\": \"\",\r\n                    \"noOfVesselGears\": 6\r\n                }\r\n            ],\r\n            \"engineType\": \"Diesel\",\r\n            \"noOfEngines\": 4,\r\n            \"propulsionType\": \"1\",\r\n            \"noOfPropellers\": 2,\r\n            \"enginePower\": 15000,\r\n            \"noOfRowsDeck\": 21,\r\n            \"bowThruster\": true,\r\n            \"bowThrusterPower\": 10000,\r\n            \"totalNoOfBowThrusters\": 1,\r\n            \"sternThrusterPower\": 500,\r\n            \"totalNoOfSternThrusters\": 6,\r\n            \"maxManeuveringSpeed\": 25,\r\n            \"mmsiNo\": 456789012,\r\n            \"documents\": [\r\n                {\r\n                    \"documentId\": 1,\r\n                    \"typeOfDocument\": \"Safety management certificate\",\r\n                    \"documentValidityDate\": \"2023-12-08\",\r\n                    \"remarks\": \"\",\r\n                    \"documentName\": \"Sailor (2)_24-11-2023_09-41-11-076_AM.pdf\",\r\n                    \"documentRequired\": \"Y\",\r\n                    \"documentPath\": \"/home/pcsuser/Vessel_upload/Sailor (2)_24-11-2023_09-41-11-076_AM.pdf\",\r\n                    \"documentUpdated\": false\r\n                },\r\n                {\r\n                    \"documentId\": 2,\r\n                    \"typeOfDocument\": \"Certificate of registry\",\r\n                    \"documentValidityDate\": \"2023-12-08\",\r\n                    \"remarks\": \"\",\r\n                    \"documentName\": \"Sailor (2)_24-11-2023_09-41-37-789_AM.pdf\",\r\n                    \"documentRequired\": \"Y\",\r\n                    \"documentPath\": \"/home/pcsuser/Vessel_upload/Sailor (2)_24-11-2023_09-41-37-789_AM.pdf\",\r\n                    \"documentUpdated\": false\r\n                },\r\n                {\r\n                    \"documentId\": 3,\r\n                    \"typeOfDocument\": \"P&I certificate of entry\",\r\n                    \"documentValidityDate\": \"2023-12-09\",\r\n                    \"remarks\": \"\",\r\n                    \"documentName\": \"Sailor_24-11-2023_09-41-58-175_AM.pdf\",\r\n                    \"documentRequired\": \"Y\",\r\n                    \"documentPath\": \"/home/pcsuser/Vessel_upload/Sailor_24-11-2023_09-41-58-175_AM.pdf\",\r\n                    \"documentUpdated\": false\r\n                },\r\n                {\r\n                    \"documentId\": 4,\r\n                    \"typeOfDocument\": \"Certificate of class and CAS/CAP for tankers\",\r\n                    \"documentValidityDate\": \"2023-12-15\",\r\n                    \"remarks\": \"\",\r\n                    \"documentName\": \"Sailor (2)_24-11-2023_09-42-16-594_AM.pdf\",\r\n                    \"documentRequired\": \"Y\",\r\n                    \"documentPath\": \"/home/pcsuser/Vessel_upload/Sailor (2)_24-11-2023_09-42-16-594_AM.pdf\",\r\n                    \"documentUpdated\": false\r\n                }\r\n            ],\r\n            \"status\": 1,\r\n            \"messageType\": \"M\",\r\n            \"portOfSubmission\": 19,\r\n            \"vesTransId\": 202311240000412,\r\n            \"tabId\": 1\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/vesselvoyage/vessel-save"
+					},
+					"response": []
+				},
+				{
+					"name": "vessel-id-details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vesselvoyage/portclearance-crn?crn=202311250000482",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vesselvoyage",
+								"portclearance-crn"
+							],
+							"query": [
+								{
+									"key": "crn",
+									"value": "202311250000482"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vessel-voyage-details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"voyageID\": [\r\n      1326\r\n    ]\r\n    // \"vcn\": [\"\"]\r\n    // \"imo\": [\r\n    //     \"7011234\"\r\n    // ]\r\n    // \"vesselName\": [\r\n    //     \"Jupiter Melody\"\r\n    // ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/vessel-voyage-details"
+					},
+					"response": []
+				},
+				{
+					"name": "vessel-imo",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "ar",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/vesselvoyage/vessel-imo?imoNo=9801234&portId=6&moduleType=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vesselvoyage",
+								"vessel-imo"
+							],
+							"query": [
+								{
+									"key": "imoNo",
+									"value": "9801234"
+								},
+								{
+									"key": "portId",
+									"value": "6"
+								},
+								{
+									"key": "moduleType",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "vessel-pagination",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw\": 1,\r\n    \"length\": 10,\r\n    \"search\": \"\",\r\n    \"start\": 0,\r\n    \"page\":0,\r\n    \"sort\": \"createdDate\",\r\n    \"sortDir\": \"DESC\",\r\n    \"filter\": null,\r\n    \"keys\": {\r\n        \"status\": [\r\n            1,2,3,4,5,6,7\r\n        ],\r\n        \"orgId\": \"ORGPOCO1127\",\r\n        \"branchId\": \"15\",\r\n        \"userType\": \"PC\",\r\n        \"portId\": 6\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/vesselvoyage/vessel-pagination"
+					},
+					"response": []
+				},
+				{
+					"name": "Funcational pagination",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n    \"draw\": 1,\r\n    \"length\": 10,\r\n    \"search\": \"RKH\",\r\n    \"start\": 0,\r\n    \"page\": 0,\r\n    \"sort\": \"createdDate\",\r\n    \"sortDir\": \"DESC\",\r\n    \"filter\": null,\r\n    \"keys\": {\r\n        \"status\": [\r\n            1,\r\n            2,\r\n            3,\r\n            4,\r\n            5,\r\n            6,\r\n            7\r\n        ],\r\n        // \"orgId\": \"1J1M1B001\",\r\n        // \"branchId\": \"1J1M1B001JEDDAH001\",\r\n        \"userType\":\"SA\",\r\n        \"portId\": 6\r\n    }\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/vesselvoyage/voyage/functionalPagination"
+					},
+					"response": []
+				},
+				{
+					"name": "vessel-update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comments\": null,\r\n    \"userId\": null,\r\n    \"transactionId\": 202401230001069,\r\n    \"status\": 3,\r\n    \"dateOfAction\": \"2024-01-23\",\r\n    \"portCode\": 18\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/vesselvoyage/vessel-update"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Voyage Registration 21/11",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"voyageNo\": \"242\",\r\n    \"portOfSubmission\": 6,\r\n    \"imoNo\": 909090,\r\n    \"noOfFenders\": \"\",\r\n    \"shippingAgentCode\": \"w2\",\r\n    // \"lineMLONo\": \"12\",\r\n    \"portCode\": 6,\r\n    \"purposeOfVisit\": 1336,\r\n    \"expectedDateAndTimeOfArrival\": \"2023-11-04T09:38\",\r\n    \"expectedDateAndTimeOfDeparture\": \"2023-11-04T09:38\",\r\n    \"serviceName\": \"\",\r\n    \"portOfDeparture\": \"1\",\r\n    \"lastPortOfCall\": \"1\",\r\n    \"expectedDraft\": \"2\",\r\n    \"totalContainerTonnage\": \"2\",\r\n    \"cargoTonnage\": \"2\",\r\n    \"totalNoOf20FeetContainerImport\": \"\",\r\n    \"totalNoOf40FeetContainerImport\": \"\",\r\n    \"totalNoOf20FeetContainerExport\": \"\",\r\n    \"totalNoOf40FeetContainerExport\": \"\",\r\n    \"voyageType\": 1099,\r\n    \"operationType\": \"\",\r\n    \"deckCargo\": \"\",\r\n    \"trade\": 1097,\r\n    \"tradeChange\": 1097,\r\n    \"inBallastWithCargo\": 1,\r\n    \"nameOfCharterer\": \"test\",\r\n    \"berthing\": 1,\r\n    \"portContractorCode\": 1293,\r\n    \"berthType\": \"\",\r\n    \"vesselType\": \"BRJ\",\r\n    \"willingnessToDoubleBanking\": true,\r\n    \"oilCessPaid\": false,\r\n    // \"oilCessPaymentPlace\": \"\",\r\n    \"cargoDescription\": \"\",\r\n    \"rotationNo\": \"\",\r\n    \"rotationNoDate\": \"\",\r\n    \"mloPAN\": \"\",\r\n    \"dumbVesselWithBargeTug\": true,\r\n    \"orgRid\": \"1J1M1B001\",\r\n    \"branchRid\": \"1J1M1B001JEDDAH001\",\r\n    \"tugIMOList\": [\r\n        {\r\n            \"tugIMO\": \"\"\r\n        }\r\n    ],\r\n    \"cargoDetailsList\": [\r\n        {\r\n            \"typeOfCargo\": \"\",\r\n            \"ieCode\": \"\"\r\n        }\r\n    ],\r\n    \"status\": 1,\r\n    \"voyageTransactionId\": 0,\r\n    \"approvalStatus\": 1,\r\n    \"createdBy\": \"ac75a037-f6a9-4142-a773-eb0b326c4d04\",\r\n    \"updatedBy\": \"ac75a037-f6a9-4142-a773-eb0b326c4d04\",\r\n    \"vesselTransationId\": 1631,\r\n    \"voyageApproval\": {\r\n        \"userRID\": 1,\r\n        \"statusApprovalRID\": 2,\r\n        \"createdBy\": 1,\r\n        \"updatedBy\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/voyage/voyage-update"
+					},
+					"response": []
+				},
+				{
+					"name": "getVoyageById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vesselvoyage/voyage/voyage-voyageTransactionId?voyageTransactionId=20231121092936",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vesselvoyage",
+								"voyage",
+								"voyage-voyageTransactionId"
+							],
+							"query": [
+								{
+									"key": "voyageTransactionId",
+									"value": "20231121092936"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "funcational Pagination",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw\": 1,\r\n    \"length\": 10,\r\n    \"search\": \"\",\r\n    \"start\": 0,\r\n    \"page\": 0,\r\n    \"sort\": \"createdDate\",\r\n    \"sortDir\": \"DESC\",\r\n    \"filter\": null,\r\n    \"keys\": {\r\n        \"status\": [\r\n            1,\r\n      2,\r\n            3,\r\n            4\r\n        ],\r\n        // \"portId\": 6,\r\n        \"userType\" :\"port\",\r\n        \"orgId\": \"1J1M1B001\",\r\n        \"branchId\": \"1J1M1B001JEDDAH001\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/vesselvoyage/voyage/voyage-pagination"
+					},
+					"response": []
+				},
+				{
+					"name": "pagination",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw\": 1,\r\n    \"length\": 10,\r\n    \"search\": \"\",\r\n    \"start\": 0,\r\n    \"page\": 0,\r\n    \"sort\": \"createdDate\",\r\n    \"sortDir\": \"DESC\",\r\n    \"filter\": null,\r\n    \"keys\": {\r\n        \"status\": [\r\n            1,\r\n            2,\r\n            3,\r\n            4\r\n        ],\r\n        // \"portId\": 6,\r\n        // \"userType\": \"port\",\r\n        \"orgId\": \"1J1M1B001\",\r\n        \"branchId\": \"1J1M1B001JEDDAH001\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/vesselvoyage/voyage/voyage-pagination"
+					},
+					"response": []
+				},
+				{
+					"name": "reject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"approvalStatus\": 3,\r\n    \"status\": \"A\",\r\n    \"vcn\": \"SAJBI\",\r\n    \"updatedBy\": \"9fa15c2b-fac5-4283-929e-aa3e55f979d0\",\r\n    \"voyageApproval\": {\r\n        \"updatedBy\": \"9fa15c2b-fac5-4283-929e-aa3e55f979d0\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/vesselvoyage/voyage/voyage-approve-reject"
+					},
+					"response": []
+				},
+				{
+					"name": "getByVCN",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vesselvoyage/voyage/voyage-vcn?pcId=15&branchId=&portId=&VCN=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vesselvoyage",
+								"voyage",
+								"voyage-vcn"
+							],
+							"query": [
+								{
+									"key": "orgId",
+									"value": "1J1M1B001",
+									"disabled": true
+								},
+								{
+									"key": "pcId",
+									"value": "15"
+								},
+								{
+									"key": "branchId",
+									"value": ""
+								},
+								{
+									"key": "portId",
+									"value": ""
+								},
+								{
+									"key": "VCN",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "military vessel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vesselvoyage/voyage/militaryVesselByVcn?vcn=RKH&portId=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vesselvoyage",
+								"voyage",
+								"militaryVesselByVcn"
+							],
+							"query": [
+								{
+									"key": "vcn",
+									"value": "RKH"
+								},
+								{
+									"key": "portId",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"voyageNo\": \"242\",\r\n    \"portOfSubmission\": 6,\r\n    \"imoNo\": 909090,\r\n    \"noOfFenders\": \"\",\r\n    \"shippingAgentCode\": \"w2\",\r\n    \"lineMLONo\": \"12\",\r\n    \"portCode\": 6,\r\n    \"purposeOfVisit\": 1336,\r\n    \"expectedDateAndTimeOfArrival\": \"2023-11-04T09:38\",\r\n    \"expectedDateAndTimeOfDeparture\": \"2023-11-04T09:38\",\r\n    \"serviceName\": \"\",\r\n    \"portOfDeparture\": \"1\",\r\n    \"lastPortOfCall\": \"1\",\r\n    \"expectedDraft\": \"2\",\r\n    \"totalContainerTonnage\": \"2\",\r\n    \"cargoTonnage\": \"2\",\r\n    \"totalNoOf20FeetContainerImport\": \"\",\r\n    \"totalNoOf40FeetContainerImport\": \"\",\r\n    \"totalNoOf20FeetContainerExport\": \"\",\r\n    \"totalNoOf40FeetContainerExport\": \"\",\r\n    \"voyageType\": 1099,\r\n    \"operationType\": \"\",\r\n    \"deckCargo\": \"\",\r\n    \"trade\": 1097,\r\n    \"tradeChange\": 1097,\r\n    \"inBallastWithCargo\": 1,\r\n    \"nameOfCharterer\": \"test\",\r\n    \"berthing\": 1,\r\n    \"portContractorCode\": 1293,\r\n    \"berthType\": \"\",\r\n    \"vesselType\": \"BRJ\",\r\n    \"willingnessToDoubleBanking\": true,\r\n    \"oilCessPaid\": false,\r\n    \"oilCessPaymentPlace\": \"\",\r\n    \"cargoDescription\": \"\",\r\n    \"rotationNo\": \"\",\r\n    \"rotationNoDate\": \"\",\r\n    \"mloPAN\": \"\",\r\n    \"dumbVesselWithBargeTug\": true,\r\n    \"tugIMOList\": [\r\n        {\r\n            \"tugIMO\": \"1298\"\r\n        }\r\n    ],\r\n    \"cargoDetailsList\": [\r\n        {\r\n            \"typeOfCargo\": \"\",\r\n            \"ieCode\": \"\"\r\n        }\r\n    ],\r\n    \"status\": 1,\r\n    \"voyageTransactionId\": 20231121092936,\r\n    \"approvalStatus\": 2,\r\n    \"createdBy\": 1,\r\n    \"updatedBy\": 1,\r\n    \"vesselTransationId\": 1631,\r\n    \"voyageApproval\": {\r\n        \"userRID\": 1,\r\n        \"statusApprovalRID\": 2,\r\n        \"createdBy\": 1,\r\n        \"updatedBy\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/vesselvoyage/voyage/voyage-update"
+					},
+					"response": []
+				},
+				{
+					"name": "branchId",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    15\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/voyage/voyage-BranchId"
+					},
+					"response": []
+				},
+				{
+					"name": "draft2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"voyageNo\": \"242\",\r\n            \"portOfSubmission\": 6,\r\n            \"imoNo\": 909090,\r\n            \"noOfFenders\": \"\",\r\n            \"shippingAgentCode\": \"w2\",\r\n            \"lineMLONo\": \"12\",\r\n            \"portCode\": 6,\r\n            \"purposeOfVisit\": 1336,\r\n            \"expectedDateAndTimeOfArrival\": \"2023-11-04T09:38\",\r\n            \"expectedDateAndTimeOfDeparture\": \"2023-11-04T09:38\",\r\n            \"serviceName\": \"\",\r\n            \"portOfDeparture\": \"1\",\r\n            \"lastPortOfCall\": \"1\",\r\n            \"expectedDraft\": \"2\",\r\n            \"totalContainerTonnage\": \"2\",\r\n            \"cargoTonnage\": \"2\",\r\n            \"totalNoOf20FeetContainerImport\": \"\",\r\n            \"totalNoOf40FeetContainerImport\": \"\",\r\n            \"totalNoOf20FeetContainerExport\": \"\",\r\n            \"totalNoOf40FeetContainerExport\": \"\",\r\n            \"voyageType\": 1099,\r\n            \"operationType\": \"\",\r\n            \"deckCargo\": \"\",\r\n            \"trade\": 1097,\r\n            \"tradeChange\": 1097,\r\n            \"inBallastWithCargo\": 1,\r\n            \"nameOfCharterer\": \"test\",\r\n            \"berthing\": 1,\r\n            \"portContractorCode\": 1293,\r\n            \"berthType\": \"\",\r\n            \"vesselType\": \"BRJ\",\r\n            \"willingnessToDoubleBanking\": true,\r\n            \"oilCessPaid\": false,\r\n            \"oilCessPaymentPlace\": \"\",\r\n            \"cargoDescription\": \"\",\r\n            \"rotationNo\": \"\",\r\n            \"rotationNoDate\": \"\",\r\n            \"mloPAN\": \"\",\r\n            \"dumbVesselWithBargeTug\": true,\r\n            \"tugIMOList\": [\r\n                {\r\n                    \"tugIMO\": \"32\"\r\n                }\r\n            ],\r\n            \"cargoDetailsList\": [\r\n                {\r\n                    \"typeOfCargo\": \"\",\r\n                    \"ieCode\": \"\"\r\n                }\r\n            ],\r\n            \"status\": 1,\r\n            \"voyageTransactionId\": 20231121102026,\r\n            \"approvalStatus\": 2,\r\n            \"createdBy\": 1,\r\n            \"updatedBy\": 1,\r\n            \"vesselTransationId\": 1631,\r\n            \"voyageApproval\": {\r\n                \"userRID\": 1,\r\n                \"statusApprovalRID\": 2,\r\n                \"createdBy\": 1,\r\n                \"updatedBy\": 1\r\n            }\r\n        }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/vesseltimestamp/vesseltimestamp-id?id=2412",
+							"protocol": "http",
+							"host": [
+								"pcs",
+								"apps",
+								"kube",
+								"devtabadul",
+								"sa"
+							],
+							"path": [
+								"vesselvoyage",
+								"vesseltimestamp",
+								"vesseltimestamp-id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2412"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ETA ETD",
+			"item": [
+				{
+					"name": "insertupdate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"VCN\": \"vcn1235\",\r\n    \"vesselName\": \"MV Vessel\",\r\n    \"imoNo\": \"1234987\",\r\n    \"callSign\": \"1234\",\r\n    \"agencyId\": 0,\r\n    \"expectedDateTimeofArrival\": \"2023-11-22T13:56\",\r\n    \"expectedDateTimeofBerthing\": \"2023-11-22T13:59\",\r\n    \"expectedDateTimeofDeparture\": \"2023-11-22T14:01\",\r\n    \"remark\": \"check\",\r\n    \"draftAFT\": 6,\r\n    \"draftFWD\": 6,\r\n    \"free_board_AFT_at_this_draft_meter\": 6,\r\n    \"free_board_FWD_at_this_draft_meter\": 6,\r\n    \"sailing_draft_AFT_meter\": 1,\r\n    \"sailing_draft_FWD_meter\": 1,\r\n    \"orgRid\": \"1J1M1B001\",\r\n    \"branchRid\": \"1J1M1B001JEDDAH001\",\r\n    \"status\": 1,\r\n    \"createdBy\": \"ac75a037-f6a9-4142-a773-eb0b326c4d04\",\r\n    \"voyageId\": 70,\r\n    \"transactionId\": 0,\r\n    \"approvalStatus\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/etaetd/etaetd-insert-update"
+					},
+					"response": []
+				},
+				{
+					"name": "getbytransactionId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "transactionId",
+								"value": "20230928112027",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/etaetd/etaetd-transactionId?transactionId=202311220000372",
+							"protocol": "http",
+							"host": [
+								"pcs",
+								"apps",
+								"kube",
+								"devtabadul",
+								"sa"
+							],
+							"path": [
+								"vesselvoyage",
+								"etaetd",
+								"etaetd-transactionId"
+							],
+							"query": [
+								{
+									"key": "transactionId",
+									"value": "202311220000372"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "approvereject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 35,\r\n    \"approvalStatus\": 5,\r\n    \"status\": \"C\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/etaetd/etaetd-cancel"
+					},
+					"response": []
+				},
+				{
+					"name": "pagination",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw\": 1,\r\n    \"length\": 10,\r\n    \"search\": \"202312190000601\",\r\n    \"start\": 0,\r\n    \"page\": 0,\r\n    \"sort\": \"createdDate\",\r\n    \"sortDir\": \"DESC\",\r\n    \"filter\": null,\r\n    \"keys\": {\r\n        \"status\": [\r\n            1\r\n        ],\r\n        \"userType\": \"port\",\r\n        \"portId\": 6\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/vesselvoyage/etaetd/etaetd-pagination"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Port Clearence",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIwQlhnYVFLczQ1Z1JJeW1nSUxPbFFHNEVjMjJpX0xwSEs3bjVKTzkzRmFBIn0.eyJleHAiOjE3MDExNjY5NTQsImlhdCI6MTcwMTE2NjY1NCwiYXV0aF90aW1lIjoxNzAxMTY1OTcxLCJqdGkiOiI2MjNmYzkwZi1hZjU5LTQ4MWUtYTQzMC1kYjRjZTVkMmI5MWUiLCJpc3MiOiJodHRwczovL2tleWNsb2FrLXJlZGhhdC1zc28uYXBwcy5vY3Auc2l0dGFiYWR1bC5zYS9hdXRoL3JlYWxtcy9wY3MiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiYWM3NWEwMzctZjZhOS00MTQyLWE3NzMtZWIwYjMyNmM0ZDA0IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiUENTX2NsaWVudCIsIm5vbmNlIjoiODNmMGVjZTEtMTkyYS00ODQ3LTk4YjQtZWFiMmEzMmIyNmIyIiwic2Vzc2lvbl9zdGF0ZSI6Ijc1YmIwMjZmLTMyNjctNGNmYS04YjAzLTE5YTRlNTNjMmUzMSIsImFjciI6IjAiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2QtcGNzLnRhYmFkdWwuc2EiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJkZWZhdWx0LXJvbGVzLXBjcyJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIGVtYWlsIHByb2ZpbGUiLCJzaWQiOiI3NWJiMDI2Zi0zMjY3LTRjZmEtOGIwMy0xOWE0ZTUzYzJlMzEiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsIm5hbWUiOiJSYWpuaXNoIERpeGl0IiwicHJlZmVycmVkX3VzZXJuYW1lIjoiY29zY28wMDEiLCJnaXZlbl9uYW1lIjoiUmFqbmlzaCIsImZhbWlseV9uYW1lIjoiRGl4aXQiLCJlbWFpbCI6InJham5pc2hkQHBvcnRhbGwuaW4ifQ.XtWKdFXbeZViV_-RpDRcgxjb2ZIV3hRMwa1nzvrAFtaw3jdzY1nIDQNMk0EDrz486ZSABnBU_4umegPVsEfHKuvhxVB5mBlQMyb74og7WFcXYeeucoMHYKhoy7v-2OFZlto9U7hRTXRWEeoTzQzRVT9v7ri1NxQhMfakL8dNG-nNx__5A_-6xPavXs34VHUooKcyqIYLPY0W8SXTxOUVZObymy0UgGwlREeDDCudYOkpS7mYLCRDbGc1Vy4DfyST-zQ4bmg7N_3RhZSZwlS9sFR4T7MeDM12CUhafC9dH22qtcS3tMeI6HNXmbDs_JEGYI27lsRrqQW0kNbIfZXcCA",
+								"disabled": true
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://d-pcs.tabadul.sa"
+							},
+							{
+								"key": "Referer",
+								"value": "http://d-pcs.tabadul.sa/"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vcn\": \"RKH0000485\",\r\n    \"nextPortOfCallRid\": 19,\r\n    \"departurePortRid\": 7,\r\n    \"expectedDatetimeBerthing\": \"2023-11-29T15:00:01\",\r\n    \"loadingDatetimeDeparture\": \"2023-12-28T14:03:53\",\r\n    \"noOfTeus\": 1,\r\n    \"noOfFeus\": 1,\r\n    \"totalTonnage\": 1,\r\n    \"trade\": 1097,\r\n    \"approvalStatusRid\": 1,\r\n    \"voyageId\": 1325,\r\n    \"approval\": [],\r\n    \"orgRid\": \"1J1M1B001\",\r\n    \"branchRid\": \"1J1M1B001JEDDAH001\",\r\n    \"createdBy\": \"2deef1b3-ce4f-4683-9e35-d4f15f6a60f5\",\r\n    \"portRid\": 6,\r\n    \"actualDatetimeOfArrival\": \"2023-09-28T10:33:01\",\r\n    \"id\": 1303,\r\n    \"crn\": 202312280000753\r\n}"
+						},
+						"url": "http://localhost:8080/vesselvoyage/portclearance-insert"
+					},
+					"response": []
+				},
+				{
+					"name": "getByCrn",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Length",
+								"value": "0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://d-pcs.tabadul.sa"
+							},
+							{
+								"key": "Referer",
+								"value": "http://d-pcs.tabadul.sa/"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"boatCode\": \"BC4512\",\r\n    \"boatName\": \"MV Senorita\",\r\n    \"resourceTypeRID\": 2520,\r\n    \"resourceId\": \"546456567\",\r\n    \"fromDate\": \"2024-01-09\",\r\n    \"toDate\": \"2024-01-10\",\r\n    \"shiftName\": \"NShift\",\r\n    \"createdBy\": \"9fa15c2b-fac5-4283-929e-aa3e55f979d0\",\r\n    \"updatedBy\": \"9fa15c2b-fac5-4283-929e-aa3e55f979d0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8089/tugspilot/boatResourceMapping-add"
+					},
+					"response": []
+				},
+				{
+					"name": "cancel",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://d-pcs.tabadul.sa"
+							},
+							{
+								"key": "Referer",
+								"value": "http://d-pcs.tabadul.sa/"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"operation\": \"isSubmit\",\r\n    \"senderId\": 1,\r\n    \"values\": [\r\n        {\r\n            \"id\": 1262,\r\n            \"voyageId\": 1324,\r\n            \"crn\": \"202311280000503\",\r\n            \"approvalStatusRid\": 5,\r\n            \"approval\": [\r\n                {\r\n                    \"userRid\": 1,\r\n                    \"statusApprovalRid\": 5,\r\n                    \"remark\": \"Rejected\",\r\n                    \"active\": true\r\n                }\r\n            ]\r\n        }\r\n    ],\r\n    \"documentsUpload\": []\r\n}"
+						},
+						"url": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/portclearance-approve-reject"
+					},
+					"response": []
+				},
+				{
+					"name": "approveReject",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJ2QzF0RkJyOWVSdnd3VGVfend0NnhfVi1KMm9SZzRTTEFqY19xWnk2dElZIn0.eyJleHAiOjE3MDExNzcwMTcsImlhdCI6MTcwMTE3NjcxNywiYXV0aF90aW1lIjoxNzAxMTc2MzY1LCJqdGkiOiI5YjU1N2U5Ny1mZGQ2LTQ4ZTktYTFkMi00ZTBkZmUxYjUxYjgiLCJpc3MiOiJodHRwczovL2tleWNsb2FrLXJlZGhhdC1zc28uYXBwcy5vY3Auc2l0dGFiYWR1bC5zYS9hdXRoL3JlYWxtcy9QTUlTIiwiYXVkIjoiYWNjb3VudCIsInN1YiI6ImMxM2EyNDhhLTMyMWQtNDFiOC04Y2FmLTQwOGY2MWU0Y2I2NyIsInR5cCI6IkJlYXJlciIsImF6cCI6IlBNSVNfY2xpZW50Iiwibm9uY2UiOiJjNDI5NzJhZC04MWM3LTRhYzQtOTIyNy1hYjFmNDk3ODQzM2EiLCJzZXNzaW9uX3N0YXRlIjoiNjNlN2E2YmUtOTdlNS00YWJlLWFiYmYtODY4ZmNkMjY5MWI5IiwiYWNyIjoiMCIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwOi8vZC1wbWlzLnRhYmFkdWwuc2EiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwiZGVmYXVsdC1yb2xlcy1wbWlzIiwidW1hX2F1dGhvcml6YXRpb24iXX0sInJlc291cmNlX2FjY2VzcyI6eyJhY2NvdW50Ijp7InJvbGVzIjpbIm1hbmFnZS1hY2NvdW50IiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6Im9wZW5pZCBlbWFpbCBwcm9maWxlIiwic2lkIjoiNjNlN2E2YmUtOTdlNS00YWJlLWFiYmYtODY4ZmNkMjY5MWI5IiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJuYW1lIjoiUG9ydCBNYXJpbmUiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJwbTAwMSIsImdpdmVuX25hbWUiOiJQb3J0IiwiZmFtaWx5X25hbWUiOiJNYXJpbmUiLCJlbWFpbCI6Im5heWFubUBwb3J0YWxsLmluIn0.PoQ2SdJ9KsEPU8WNIsw1UifQ3Dj_SiatvpKHlNvrv47VthN9OVwTreQGViduYwlaY_qWslBptpcvBmcU3At1FJ0MCICokSuhBvfVRFtic6q6l8vATiuYlwpu8_lWReJDL4cAuO8p_nyQjC5-9BYaFgJcbTeHJGa1zSZSubkRfRZuKe_bT7S5UQ6tAU6t72lES-vTOk7v16Yljt2vkre8EkDCAvmJik2EyqjjKeL5d_P-tYWhTrNklGK6jUAcM-QQu2A961LclUDbSsVfzs6Mnk_Xw3vkFUd2wy20IWzeMwWWYw2CbV0sawsttkgLhg0te2kXp7t96LnKJfsTCUnx0g"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Origin",
+								"value": "http://d-pmis.tabadul.sa"
+							},
+							{
+								"key": "Referer",
+								"value": "http://d-pmis.tabadul.sa/"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 Edg/119.0.0.0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw\": 1,\r\n    \"length\": 10,\r\n    \"search\": \"\",\r\n    \"start\": 0,\r\n    \"page\": 0,\r\n    \"sort\": \"createdDate\",\r\n    \"sortDir\": \"DESC\",\r\n    \"filter\": null,\r\n    \"keys\": {\r\n        \"status\": [\r\n            1,\r\n            2,\r\n            3,\r\n            4,\r\n            5,\r\n            6,\r\n            7\r\n        ],\r\n        \"orgId\": \"1J1M1B001\",\r\n        \"branchId\": \"1J1M1B001JEDDAH001\"\r\n    }\r\n}"
+						},
+						"url": "http://localhost:8080/vesselvoyage/vessel-pagination"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw\": 0,\r\n    \"length\": 10,\r\n    \"search\": \"202311290000530\",\r\n    \"start\": 0,\r\n    \"page\": 0,\r\n    \"sort\": \"createdDate\",\r\n    \"sortDir\": \"DESC\",\r\n    \"filter\":\r\n     null,\r\n    //  {\r\n    //    \"vesselName\":\"MV Senorita\"\r\n    //     //  \"vesselNameArabic\":\"إم في سنيوريتا\"\r\n    // },\r\n    \"keys\": {\r\n        \"status\": [\r\n            1,\r\n            2,\r\n            3\r\n           \r\n        ],\r\n        \"portId\": 6\r\n        // \"orgId\": \"1J1M1B001\",\r\n        // \"branchId\": \"1J1M1B001JEDDAH001\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/vesselvoyage/portclearance-pagination"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/javascript, /; q=0.01"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5a2NNcmlHSzRBbFNRZUwzbUZSbld5ODJFcU5rdDcxdE8xMHpXUnhRR0VrIn0.eyJleHAiOjE3MDQ0NTUxNzAsImlhdCI6MTcwNDQ1NDg3MCwiYXV0aF90aW1lIjoxNzA0NDU0MzAxLCJqdGkiOiJmNGJmZWZkNy04MGNhLTQzMGMtOGU2NS05NGVmYWFiMjQ3MzkiLCJpc3MiOiJodHRwOi8vcS1wY3MudGFiYWR1bC5zYS9hdXRoL3JlYWxtcy9QQ1MiLCJhdWQiOlsicmVhbG0tbWFuYWdlbWVudCIsImFjY291bnQiXSwic3ViIjoiMmRlZWYxYjMtY2U0Zi00NjgzLTllMzUtZDRmMTVmNmE2MGY1IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiUENTX2NsaWVudCIsIm5vbmNlIjoiMzExYjZlZjUtYWJkMC00ODJlLTgyODgtY2IxNTY0OGE3YzAxIiwic2Vzc2lvbl9zdGF0ZSI6Ijk0MjU0NGY2LWM0YjUtNGVkNC05ZDNmLWEyNWMwYThhMTkzNiIsImFjciI6IjAiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL3EtcGNzLnRhYmFkdWwuc2EiXSwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJwY3N1c2VyIiwiZGVmYXVsdC1yb2xlcy1wY3MiXX0sInJlc291cmNlX2FjY2VzcyI6eyJyZWFsbS1tYW5hZ2VtZW50Ijp7InJvbGVzIjpbInZpZXctcmVhbG0iLCJ2aWV3LWlkZW50aXR5LXByb3ZpZGVycyIsIm1hbmFnZS1pZGVudGl0eS1wcm92aWRlcnMiLCJpbXBlcnNvbmF0aW9uIiwicmVhbG0tYWRtaW4iLCJjcmVhdGUtY2xpZW50IiwibWFuYWdlLXVzZXJzIiwicXVlcnktcmVhbG1zIiwidmlldy1hdXRob3JpemF0aW9uIiwicXVlcnktY2xpZW50cyIsInF1ZXJ5LXVzZXJzIiwibWFuYWdlLWV2ZW50cyIsIm1hbmFnZS1yZWFsbSIsInZpZXctZXZlbnRzIiwidmlldy11c2VycyIsInZpZXctY2xpZW50cyIsIm1hbmFnZS1hdXRob3JpemF0aW9uIiwibWFuYWdlLWNsaWVudHMiLCJxdWVyeS1ncm91cHMiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoib3BlbmlkIHBjc3VzZXIgZW1haWwgcHJvZmlsZSIsInNpZCI6Ijk0MjU0NGY2LWM0YjUtNGVkNC05ZDNmLWEyNWMwYThhMTkzNiIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkFkZWwgQWxoYW1lZCIsInByZWZlcnJlZF91c2VybmFtZSI6ImFkaWwwMDIiLCJnaXZlbl9uYW1lIjoiQWRlbCIsImZhbWlseV9uYW1lIjoiQWxoYW1lZCIsImVtYWlsIjoiYWRpbDAwMkB0YWJhZHVsLnNhIn0.H2TVBg0k3l6IyCnwvPMG22zGaVGNG6d-1tRT2t-SPES4ukelEn_JzlqWSn4fFddbMTgTYxeGwrJM9BXRjWFwTwAYUtMk00VM1Ed2a7YS6Iyd7cAwpe8olRNi6kbsaOrtCrwZeoKsNrDf4t1mYH6UAM3bd9IcdQbjf75AI7M3R9Q9oxZ6_8YyDw_K-esaZV9usG5gqZyp1XVt8tL42sw9pspiY-0awJtpseZTqlkYcMAVJX1MHbdTrWdjJsgoPZ6R2rY2eIaEuHJPfndzfppZa48UK_If0qZAMm3vXFl-dQ-25HoYrYbCsaQ63F-cGJUrRj33y4ClQPmYR9E7HB7Iuw"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Referer",
+								"value": "http://q-pcs.tabadul.sa/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "cross-site"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Google Chrome\";v=\"119\", \"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw\": 3,\r\n    \"length\": 10,\r\n    \"search\": \"\",\r\n    \"start\": 0,\r\n    \"page\": 0,\r\n    \"sort\": \"crn\",\r\n    \"sortDir\": \"DESC\",\r\n    \"filter\": null,\r\n    \"keys\": {\r\n        \"status\": [\r\n            1,\r\n            2,\r\n            3,\r\n            4,\r\n            5,\r\n            6,\r\n            7\r\n        ],\r\n        \"orgId\": \"1J1M1B001\",\r\n        \"branchId\": \"1J1M1B001JEDDAH001\"\r\n    }\r\n}"
+						},
+						"url": "https://qapigw.tabadul.sa/tabadul/pcs/vesselvoyage/portclearance-pagination"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PreArrival 23/11",
+			"item": [
+				{
+					"name": "insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"vcn\": \"RKH0000422\",\r\n    \"callSign\": \"10\",\r\n    \"imoNo\": \"9943332\",\r\n    \"portOfSubmission\": \"SARKH\",\r\n    \"voyageNo\": \"567657\",\r\n    \"agentCode\": \"1234\",\r\n    \"lineMLOCode\": \"\",\r\n    \"inmarsatNo\": \"123126873673265\",\r\n    \"companyName\": \"The Testing byte\",\r\n    \"companySecurityOfficerName\": \"New\",\r\n    \"companySecurityOfficerContact\": 654658979,\r\n    \"companySecurityOfficerEmail\": \"check@tab.sa\",\r\n    \"expectedDateAndTimeOfArrival\": \"2023-11-30T17:26\",\r\n    \"berthCode\": 1,\r\n    \"purposeOfVisit\": 1083,\r\n    \"internationalShipSecurityCertificateNo\": \"12345fvbdhf\",\r\n    \"shipSecurityOfficerName\": \"Testing\",\r\n    \"shipSecurityOfficerDesignation\": \"Chief\",\r\n    \"whetherInterim\": false,\r\n    \"issuseDate\": \"2023-10-01\",\r\n    \"expiryDate\": \"2023-12-31\",\r\n    \"issuingAuthorityName\": \"The research\",\r\n    \"reasonForNonAvailability\": \"test\",\r\n    \"approvedShipPlanOnboard\": false,\r\n    \"presentLevelOfSecurityOnboard\": 1146,\r\n    \"currentLatitude\": 12.1322,\r\n    \"currentLongitude\": 45.021214,\r\n    \"currentPort\": 6,\r\n    \"generalDescriptionOfCargo\": \"test\",\r\n    \"dangerousCargoOnboard\": false,\r\n    \"descriptionOfDangerousCargo\": \"\",\r\n    \"anyOtherSecurityInformation\": \"test\",\r\n    \"agentContactOfficerName\": \"test\",\r\n    \"agentContactOfficerTelephone\": 1236547898,\r\n    \"agentContactOfficerFax\": 0,\r\n    \"PFSOContact\": 1236541,\r\n    \"orgRid\": \"1J1M1B001\",\r\n    \"branchRid\": \"1J1M1B001JEDDAH001\",\r\n    \"status\": 1,\r\n    \"createdBy\": \"ac75a037-f6a9-4142-a773-eb0b326c4d04\",\r\n    \"voyageID\": 1308,\r\n    \"transactionId\": 0,\r\n    \"voyagePreArrivalVessel\": [\r\n        {\r\n            \"vcn\": \"RKH0000422\",\r\n            \"visitSequenceNo\": \"12\",\r\n            \"portOfVisitName\": \"SAHOF\",\r\n            \"portOfVisit\": 2,\r\n            \"securityLevel\": 1147,\r\n            \"securityLevelAtPort\": 1146,\r\n            \"visitFromDate\": \"2023-11-22\",\r\n            \"visitToDate\": \"2023-11-29\",\r\n            \"anySpecialMeasureTaken\": true,\r\n            \"descriptionOfSpecialMeasureTaken\": \"12test\",\r\n            \"anyShipToShipActivityCarried\": true,\r\n            \"descriptionOfShipToShipActivityCarried\": \"fsg\",\r\n            \"approvedSecurityProcedureMaintained\": true,\r\n            \"descriptionOfApprovedSecurityProcedureMaintained\": \"12354da\",\r\n            \"isActive\": true,\r\n            \"createdBy\": \"ac75a037-f6a9-4142-a773-eb0b326c4d04\",\r\n            \"updatedBy\": \"ac75a037-f6a9-4142-a773-eb0b326c4d04\"\r\n        }\r\n    ],\r\n    \"pfsocontact\": 1236541,\r\n    \"inmersatNo\": \"123126873673265\",\r\n    \"approvalStatus\": 1,\r\n    \"isActive\": true,\r\n    \"voyagePreArrivalApproval\": {\r\n        \"userRID\": 1,\r\n        \"statusApprovalRID\": 1,\r\n        \"createdBy\": \"ac75a037-f6a9-4142-a773-eb0b326c4d04\",\r\n        \"isActive\": true\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/prearrivalnotification/prearrivalnotification-insert-update"
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vesselvoyage/prearrivalnotification/prearrivalnotification-id?id=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vesselvoyage",
+								"prearrivalnotification",
+								"prearrivalnotification-id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by crn",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vesselvoyage/prearrivalnotification/prearrivalnotification-refrenceno?transactionId=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vesselvoyage",
+								"prearrivalnotification",
+								"prearrivalnotification-refrenceno"
+							],
+							"query": [
+								{
+									"key": "transactionId",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "approve",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1326,\r\n    \"approvalStatus\": 4,\r\n    \"status\": \"A\",\r\n    \"updatedBy\": \"c13a248a-321d-41b8-8caf-408f61e4cb67\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/prearrivalnotification/prearrivalnotification-approve-reject",
+							"protocol": "http",
+							"host": [
+								"pcs",
+								"apps",
+								"kube",
+								"devtabadul",
+								"sa"
+							],
+							"path": [
+								"vesselvoyage",
+								"prearrivalnotification",
+								"prearrivalnotification-approve-reject"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "1",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "paginationPAN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw\": 1,\r\n    \"length\": 10,\r\n    \"search\": \"202312130000571\",\r\n    \"start\": 0,\r\n    \"page\": 0,\r\n    \"sort\": \"createdDate\",\r\n    \"sortDir\": \"DESC\",\r\n    \"filter\": null,\r\n    \"keys\": {\r\n        \"status\": [\r\n            1,\r\n            3,\r\n            \r\n            4\r\n            \r\n        ],\r\n        // \"portId\": 6\r\n        \"orgId\": \"1J1M1B001\",\r\n        \"branchId\": \"1J1M1B001JEDDAH001\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/vesselvoyage/prearrivalnotification/prearrivalnotification-pagination"
+					},
+					"response": []
+				},
+				{
+					"name": "gel all pre data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/prearrivalnotification/prearrivalnotification-details"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "AgencyChange R2",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"id\": 1,\r\n    \"voyageId\": 55,\r\n    // \"crn\": 67890,\r\n    \r\n    \"agentQualifierCodeRid\": 2,\r\n    \"shippingAgentId\": 3,\r\n    \"transfereeAgentQualifierCodeRid\": 4,\r\n    \"transfereeAgentId\": 5,\r\n    \"ownersProtectingAgentCodeId\": 6,\r\n    \"agentsResponsibilityChangeDate\": \"2023-10-09T12:00:00\",\r\n    \"placeOfChangePortRid\": 7,\r\n    \"placeOfChangeTerminalBerthId\": 1,\r\n    \"approvalStatusRid\": 9,\r\n    \"createdBy\": 10,\r\n    \"createdDate\": \"2023-10-08T15:30:00\",\r\n    \"updatedBy\": 11,\r\n    \"updatedDate\": \"2023-10-09T08:45:00\",\r\n    \"isActive\": true,\r\n    \"orgRid\":\"prajakta\",\r\n    \"portRid\":18,\r\n    \"branchRid\":\"kate\",\r\n    \"agencyChangeApproval\": [\r\n        {\r\n            //\"id\": 1,\r\n            \"userRid\": \"user123\",\r\n            \"statusApprovalRid\": 2,\r\n            \"remark\": \"This is a remark.\",\r\n            \"createdBy\": 3,\r\n            \"createdDate\": \"2023-10-09T12:00:00\",\r\n            \"updatedBy\": 4,\r\n            \"updatedDate\": \"2023-10-09T14:30:00\",\r\n            \"isActive\": true\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/agency/agency-insert"
+					},
+					"response": []
+				},
+				{
+					"name": "get by crn",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/agency/agency-crn?crn=20231012033748",
+							"protocol": "http",
+							"host": [
+								"pcs",
+								"apps",
+								"kube",
+								"devtabadul",
+								"sa"
+							],
+							"path": [
+								"vesselvoyage",
+								"agency",
+								"agency-crn"
+							],
+							"query": [
+								{
+									"key": "crn",
+									"value": "20231012033748"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    // \"id\": 1,\r\n    \"voyageId\": 55,\r\n    // \"crn\": 67890,\r\n    \"id\": 14,\r\n    \"crn\": 202311210000364,\r\n    \"agentQualifierCodeRid\": 2,\r\n    \"shippingAgentId\": 3,\r\n    \"transfereeAgentQualifierCodeRid\": 4,\r\n    \"transfereeAgentId\": 5,\r\n    \"ownersProtectingAgentCodeId\": 6,\r\n    \"agentsResponsibilityChangeDate\": \"2023-10-09T12:00:00\",\r\n    \"placeOfChangePortRid\": 7,\r\n    \"placeOfChangeTerminalBerthId\": 1,\r\n    \"approvalStatusRid\": 9,\r\n    \"createdBy\": 10,\r\n    \"createdDate\": \"2023-10-08T15:30:00\",\r\n    \"updatedBy\": 11,\r\n    \"updatedDate\": \"2023-10-09T08:45:00\",\r\n    \"isActive\": true,\r\n    \"agencyChangeApproval\": [\r\n        {\r\n            //\"id\": 1,\r\n            \"userRid\": \"user123\",\r\n            \"statusApprovalRid\": 2,\r\n            \"remark\": \"This is a remark.\",\r\n            \"createdBy\": 3,\r\n            \"createdDate\": \"2023-10-09T12:00:00\",\r\n            \"updatedBy\": 4,\r\n            \"updatedDate\": \"2023-10-09T14:30:00\",\r\n            \"isActive\": true\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/agency/agency-insert"
+					},
+					"response": []
+				},
+				{
+					"name": "approve",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"approvalStatusRid\": 3,\r\n   \r\n    \"agencyChangeApproval\": [\r\n        {\r\n            //\"id\": 1,\r\n            //\"agencyChangeId\":\"praj\",\r\n            \"userRid\": \"user123\",\r\n            \"statusApprovalRid\": 3,\r\n            \"remark\": \"This is a remark.\",\r\n            \"createdBy\": 3,\r\n            \"createdDate\": \"2023-10-09T12:00:00\",\r\n            \"updatedBy\": 4,\r\n            \"updatedDate\": \"2023-10-09T14:30:00\",\r\n            \"isActive\": true\r\n        }\r\n        \r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/agency/agency-status",
+							"protocol": "http",
+							"host": [
+								"pcs",
+								"apps",
+								"kube",
+								"devtabadul",
+								"sa"
+							],
+							"path": [
+								"vesselvoyage",
+								"agency",
+								"agency-status"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "action",
+									"value": "reject",
+									"disabled": true
+								},
+								{
+									"key": "approvalStatusRid",
+									"value": "3",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw\": 1,\r\n    \"length\": 10,\r\n    \"search\": \"\",\r\n    \"start\": 0,\r\n    \"page\": 0,\r\n    \"sort\": \"crn\",\r\n    \"sortDir\": \"DESC\",\r\n    \"filter\":\r\n    null,\r\n    \r\n  //  {\r\n       // \"vcn\": \"1234VCN\"\r\n      //\"approvalStatusRid\": 9\r\n   // },\r\n    \"keys\": {\r\n        \"status\": [\r\n            1,\r\n            2,\r\n            3,\r\n            4,\r\n            9,\r\n            10\r\n        ],\r\n        \"orgId\": \"1J1M1B001\",\r\n        \"branchId\": \"1J1M1B001JEDDAH001\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/vesselvoyage/agency/agency-pagination"
+					},
+					"response": []
+				},
+				{
+					"name": "reject",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"approvalStatusRid\": 4,\r\n    \"remark\":\"reject\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8080/vesselvoyage/agency/agency-status"
+					},
+					"response": []
+				},
+				{
+					"name": "cancle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": ""
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": null,\r\n    \"crn\": \"\",\r\n    \"vcn\": \"vcn27102023\",\r\n    \"imoNo\": \"1234556\",\r\n    \"vesselNameEnglish\": \"rtyuioiuytrftghyjklkjhgfdfghjkoo\",\r\n    \"vesselNameArabic\": \"iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii\",\r\n    \"voyageId\": 170,\r\n    \"agentQualifierCodeRid\": \"\",\r\n    \"shippingAgentId\": \"\",\r\n    \"transfereeAgentQualifierCodeRid\": \"\",\r\n    \"transfereeAgentId\": \"\",\r\n    \"ownersProtectingAgentCodeId\": \"\",\r\n    \"agentsResponsibilityChangeDate\": \"1900-01-01T00:00:00\",\r\n    \"placeOfChangeTerminalBerthId\": \"\",\r\n    \"approvalStatusRid\": 2,\r\n    \"portRid\": null,\r\n    \"orgRid\": null,\r\n    \"branchRid\": null,\r\n    \"transferedBranchRID\": \"2MAWANI002SAJED18\",\r\n    \"transferedOrgRID\": \"2MAWANI002\",\r\n    \"agencyChangeApproval\": [\r\n        {\r\n            \"statusApprovalRid\": 2,\r\n            \"remark\": \"\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "localhost:8188/vesselvoyage/agency/agency-insert"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VesselTimeStamp",
+			"item": [
+				{
+					"name": "Insert",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n        {\r\n            // \"vcn\":\"125\",\r\n            // \"portOfSubmission\": 1,\r\n            // \"vesselNameArabic\":\"kkmnm\",\r\n            // \"vesselNameEnglish\":\"opop\",\r\n            //  \"id\": 192,\r\n            \"CRN\": 20230929025228,\r\n            \"voyageId\": 65,\r\n            \"vesselBerthDateTime\": \"2023-01-10T10:34:20\",\r\n            \"depatureDateTime\": \"2023-02-11T10:34:20\",\r\n            \"unitOfQuantityRid\": \"95\",\r\n            \"operationFicilityRid\": 78,\r\n            \"sailingDateTime\": \"2023-05-12T10:34:20\",\r\n            \"shippingAgentRid\": 0,\r\n            \"arrivalDateTime\": \"2023-05-13T10:34:20\",\r\n            \"dockingDateTime\": \"2023-05-14T10:34:20\",\r\n            \"redinessDateTime\": \"2023-05-15T10:34:20\",\r\n            \"arrivalDateTimeCargoCommencement\": \"2023-05-16T10:34:20\",\r\n            \"accountAgentChargeable\": \"pp\",\r\n            \"vesselBerthingSubstatus\": \"A\",\r\n            \"portClearanceDate\": \"2023-05-17T10:34:20\",\r\n            \"unberthingDateTime\": \"2023-05-18T10:34:20\",\r\n            \"nextPortOfCallRid\": 1,\r\n            \"totalWeightConsignment\": \"\",\r\n            \"anchoringDateTime\": \"2023-05-19T10:34:20\",\r\n            \"eta\": \"2023-05-20T10:34:20\",\r\n            \"pilotboardedDateTime\": \"2023-05-21T10:34:20\",\r\n            \"cartingLocation\": \"A\",\r\n            \"arrivalDateTimeBerth\": \"2023-05-22T10:34:20\",\r\n            \"cargoOpeationCompletiondateTime\": \"2023-05-23T10:34:20\",\r\n            \"haulingOutDateTime\": \"2023-05-24T10:34:20\",\r\n            \"berthDateTime\": \"2023-05-25T10:34:20\",\r\n            \"vesselCalled\": \"2023-05-25T10:34:20\",\r\n            \"pilotStartedDateTime\": \"2023-05-27T10:34:20\",\r\n            \"pilotArrivalDateTime\": \"2023-05-28T10:34:20\",\r\n            \"firstRopeLinkedDateTime\": \"2023-05-29T10:34:20\",\r\n            \"lastRopeLinkedDateTime\": \"2023-05-30T10:34:20\",\r\n            \"reasonForWating\": \"1\",\r\n            // \"createdBy\": \"\",\r\n            // \"createdDate\": \"\",\r\n            // \"updatedBy\": \"\",\r\n            // \"updatedDate\": \"\",\r\n            \"active\": true,\r\n            \"vesselBerthingStatusRID\": \"\"\r\n        }\r\n   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/vesseltimestamp/vesseltimestamp-insert-update"
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/vesseltimestamp/vesseltimestamp-id?id=1387",
+							"protocol": "http",
+							"host": [
+								"pcs",
+								"apps",
+								"kube",
+								"devtabadul",
+								"sa"
+							],
+							"path": [
+								"vesselvoyage",
+								"vesseltimestamp",
+								"vesseltimestamp-id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1387"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagination",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"draw\": 0,\r\n    \"length\": 10,\r\n    \"search\": \"RKH0000448\",\r\n    \"start\": 0,\r\n    \"page\": 0,\r\n    \"sort\": \"createdDate\",\r\n    \"sortDir\": \"DESC\",\r\n    \"filter\": null,\r\n    //  {\r\n    //    // \"vesselNameEnglish\":\"MV Senorita\"\r\n    //      \"vesselNameArabic\":\"إم في سنيوريتا\"\r\n    // }\r\n    \"keys\": {\r\n        \"portId\": 6\r\n        // \"orgId\": \"1J1M1B001\",\r\n        // \"branchId\": \"1J1M1B001JEDDAH001\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/vesselvoyage/vesseltimestamp/vesseltimestamp-pagination"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n        {\r\n            \"vcn\": \"123456\",\r\n            \"vesselname\": \"The Veerat \",\r\n            \"vesselnamea\": \"The Veerat \",\r\n            \"vesselBerthingStatusRID\": 3,\r\n            \"portclearence\": \"657\",\r\n            \"portOfSubmission\": 222,\r\n            \"depatureDateTime\": \"2023-09-28T13:47:20\",\r\n            \"unitOfQuantity\": 3,\r\n            \"operationFicilityRid\": 2,\r\n            \"sailingDateTime\": \"2023-09-30T13:46:01\",\r\n            \"shippingAgentRid\": 1324,\r\n            \"actualdatetimeport\": \"2023-09-28T10:33:01\",\r\n            \"arrivalDateTime\": \"2023-09-27T13:46:28\",\r\n            \"dockingDateTime\": \"2023-09-29T13:46:16\",\r\n            \"redinessDateTime\": \"2023-09-27T13:46:19\",\r\n            \"arrivalDateTimeCargoCommencement\": \"2023-09-27T15:46:53\",\r\n            \"accountAgentChargeable\": \"yes\",\r\n            \"berth_number\": \"76\",\r\n            \"flagcountryvessel\": \"India\",\r\n            \"vesselBerthingSubstatus\": \"tested\",\r\n            \"portClearanceDate\": \"2023-09-27T10:33:39\",\r\n            \"unberthingDateTime\": \"2023-09-28T13:47:32\",\r\n            \"nextPortOfCallRid\": 3123,\r\n            \"totalWeightConsignment\": 11,\r\n            \"anchoringDateTime\": \"2023-09-29T13:47:23\",\r\n            \"reasonForWating\": 2,\r\n            \"eta\": \"2023-09-29T13:45:52\",\r\n            \"pilotboardedDateTime\": \"2023-09-29T13:47:13\",\r\n            \"cartingLocation\": \"India\",\r\n            \"arrivalDateTimeBerth\": \"2023-09-28T13:47:29\",\r\n            \"cargoOpeationCompletiondateTime\": \"2023-09-28T13:47:37\",\r\n            \"haulingOutDateTime\": \"2023-09-28T13:47:41\",\r\n            \"berthDateTime\": \"2023-10-24T13:47:55\",\r\n            \"vesselCalled\": \"2023-09-28T13:47:45\",\r\n            \"pilotStartedDateTime\": \"2023-09-27T13:47:48\",\r\n            \"pilotArrivalDateTime\": \"2023-09-28T13:47:51\",\r\n            \"vesselBerthDateTime\": \"2023-09-28T13:47:58\",\r\n            \"firstRopeLinkedDateTime\": \"2023-09-28T13:48:03\",\r\n            \"lastRopeLinkedDateTime\": \"2023-09-28T13:48:07\",\r\n            \"voyageId\": 84\r\n        }\r\n   ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://pcs.apps.kube.devtabadul.sa/vesselvoyage/vesseltimestamp/vesseltimestamp-insert-update"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
